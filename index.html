@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf=8">
+		<meta name="vielport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+		<title>GerirAzul</title>
+		<style>
+		*{
+      		margin: 0;
+     		border: 0;
+      		padding: 0;
+              }
+        body{
+        	background-color: #FFFFFF;
+        	        }
+
+        header{min-width: 500px;
+        	margin-left: 20px;
+         	margin-right: 20px;
+			margin-top: 20px;
+			height: 180px;
+			background-color:#00658f;
+              }
+          h1{
+          	font-family: arial;
+          	font-size: 34px;
+          }
+          h2{
+          	font-family: arial;
+          	font-size: 29px;
+          }
+          .fundo{
+          	background-color: #dde3ea;
+          	margin-left: 20px;
+         	margin-right: 20px;
+         	padding-top: 42px;
+         	margin-bottom: 25px;
+
+          }
+          h3, h4{
+          	font-family: arial;
+          	margin-top: 10px;
+          	margin-bottom: 10px;
+          	margin-left: 300px;
+          }
+          .img2{
+          	position: absolute;
+          	height: 25px;
+			width: 25px;
+          }
+          .posição{
+          	margin-top: 10px;
+          	margin-bottom: 20px;
+          	margin-left: 40px;
+         	margin-right: 40px;
+          }
+          .espaço1{
+          	padding-top: 3px;
+         	font-family: arial;
+         	font-size: 18px;
+         	margin-left: 35px;
+          }
+          .img3{
+          	position: absolute;
+          	height: 25px;
+          	width: 25px;
+          }
+          .posição2{
+          	margin-right: 40px;
+          	margin-left: 40px;
+         	margin-top: 10px;
+         	margin-bottom: 20px;
+          }
+          .espaço2{
+          	padding-top: 3px;
+         	font-family: arial;
+         	font-size: 18px;
+         	margin-left: 35px;
+          }
+          #grid-corpo0{
+          	padding-left: 25%;
+         	padding-right: 25%;
+          }
+          .grid0{
+          	text-align: center;
+         	display: grid;
+         	grid-template-columns: 45% 45%;
+         	grid-gap: 43px;
+          }
+          .grid0 div{
+         	background-color: #00658f; 
+         	text-align: center;
+         	padding-top: 5px;
+         	padding-bottom: 5px;
+         	border-radius: 20px;
+          }
+         
+          .avançar{
+          	color: #FFFFFF;
+          	text-decoration: none;
+          	font-size: 18px;
+          	font-family: arial;
+
+          }
+         
+          .cancelar{
+          	color: #FFFFFF;
+          	text-decoration: none;
+          	font-size: 18px;
+          	font-family: arial;
+          	
+          }
+         
+          .final{min-width: 500px;
+          	padding-top: 10px;
+          	padding-bottom: 50px;
+          	margin-right: 15%;
+          	margin-left: 15%;
+          	in-width: 200px;
+          }
+          #grid-h{min-width: 500px;
+          	padding-top: 70px;
+          	margin-right: 80px;
+          }
+          .h{
+          	display: grid;
+         	grid-template-columns: 80% 30% ;
+         	grid-gap: 0px;
+          }
+          .h div{
+          }
+          
+         .h1h2{
+         	padding-left: 6%;
+         }
+        .perfil{
+        	display: grid;
+         	grid-template-columns: 60px 80% ;
+         	grid-gap: 2px;
+        	min-width: 200px;
+        	text-align: left;
+        }
+        .nome{
+        	text-decoration: none;
+        	font-family: arial;
+        	color:#000000;  
+        	font-size: 19px;
+        	font-weight: bold;
+        }
+        .img1{
+        	
+			height: 55px;
+			width: 55px;
+			border-radius: 80px 80px;
+              }
+        .espaço-top-nome{
+        	padding-top: 15px;
+         }
+         
+         .caixa{min-width: 500px;
+         	padding-top: 0px;
+         	padding-bottom: 20px;
+         	background-color: #ffffff;
+         	margin-left: 70px;
+         	margin-right: 70px;
+         	margin-bottom: 30px;
+         	border-radius: 50px;
+
+         }
+         .corpo{
+         		
+         }
+         #grid-corpo{
+
+         	padding-top: 30px;
+         	margin-left: 20px;
+         	margin-right: 20px;
+         }
+         .grid{
+         	background-color: #FFFFFF;
+         	padding: 0px;
+         	margin: 0 auto;
+         	display: grid;
+         	grid-template-columns: 19% 19% 19% 19% 19% ;
+         	grid-gap: 12px;
+         	
+         }
+         .grid div{
+         	margin: 0px;
+         	background-color: #c8e6ff;
+         	font-family: arial;
+         	font-weight: bold;  
+         	text-align: left;
+         	padding: 10px;
+         	border-radius: 10px;
+
+         }
+         @media (min-width: 400px) and (max-width: 1000px){
+				.grid{
+				display: grid;
+         	grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)) ;
+         	grid-gap: 12px;
+				}
+			}
+         .caixa2{
+         	min-width: 400px;
+         	margin-top: 160px;
+         	margin-left: 272px;
+         	margin-right: 272px;
+         	padding-top: 40px;
+         	padding-bottom: 5px;
+         	background-color: #f5f7f9;
+         	border-radius: 50px;
+         }
+         h5{
+         	font-family: arial;
+         	font-size: 18px;
+         }
+         #grid-espaço{
+         	font-family: arial;
+         	font-size: 18px;
+         	margin-left: 40px;
+         	margin-right: 40px;
+         	margin-bottom: 15px;
+         	margin-top: 20px;
+         }
+         .espaço{
+         	display: grid;
+         	grid-template-columns:70% 25% ;
+         	grid-gap: 5%;
+          }
+          .espaço div{
+          	 font-weight: bold;
+          }
+          .espaço0{
+          	text-align: right;
+          }
+          .espaço00{
+          	display: grid;
+         	grid-template-columns:60% 40% ;
+         	grid-gap: 0%;
+          }
+          .espaço00 div{
+          	font-weight: bold;
+          }
+         #grid-corpo2{
+         	margin-left: 40px;
+         	margin-right: 40px;
+			background-color: #000000;
+			padding: 2px;
+         }
+         .grid2{
+         	padding: 0;
+         	margin: 0 auto;
+         	background-color: #D3D3D3;
+         	display: grid;
+         	grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)) ;
+         	grid-gap: 2px;
+
+         }
+         .grids{
+         	margin: 0;
+         	background-color: #FFFFFF;
+         	text-align: left;
+         	padding: 10px;
+         }
+         
+          @media (min-width: 400px) and (max-width: 1000px){
+			.caixa2{
+         	margin-left: 20px;
+         	margin-right: 20px;
+         }
+        
+       	}
+         
+          #grid-corpo3{
+         	margin-left: 40px;
+         	margin-right: 40px;
+			background-color: #000000;
+			padding: 2px;
+         }
+          .grid3{
+         	padding: 0;
+         	margin: 0 auto;
+         	padding: 10px;
+         	background-color: #FFFFFF;
+         	display: grid;
+         	grid-template-columns: 1fr ;
+         	grid-gap: 2px;
+         }
+         .grid3 div{
+
+         }
+         
+          .espaço3{
+         	font-family: arial;
+         	font-size: 22px;
+         	margin: 0px auto;
+         	margin-left: 40px;
+         	margin-right: 40px;
+         	margin-bottom: 15px;
+         	padding-left: 10px;
+         	padding-top: 20px;
+          }
+          .caixa3{min-width: 400px;
+          	padding-top: 40px;
+          	margin-top: 35px;
+          	padding-bottom: 10px;
+         	margin-left: 272px;
+         	margin-right: 272px;
+         	background-color: #f5f7f9;
+         	border-radius: 50px;
+          }
+          @media (min-width: 280px) and (max-width: 1000px){
+          	.caixa3{
+         	margin-left: 20px;
+         	margin-right: 20px;
+          }
+          }
+         #grid-corpo4{
+         	margin-left: 40px;
+         	margin-right: 40px;
+			background-color: #000000;
+			padding: 2px;
+         }
+          .grid4{
+         	padding: 0;
+         	margin: 0 auto;
+         	padding: 10px;
+         	background-color: #FFFFFF;
+         	display: grid;
+         	grid-template-columns: 1fr ;
+         	grid-gap: 2px;
+         }
+         .espaço4{
+         	font-family: arial;
+         	font-size: 22px;
+         	margin: 0px auto;
+         	margin-left: 40px;
+         	margin-right: 40px;
+         	margin-bottom: 15px;
+         	padding-left: 10px;
+         	padding-top: 20px;
+         	padding-bottom: 20px;
+          }
+          p{
+          	font-family: arial;
+          	font-size: 22px;
+          }
+          #grid-interna{
+          	margin: 0px;
+          }
+          .interna{
+          	background-color: #ffffff;
+          	display: grid;
+         	grid-template-columns: 60% 10% 31% ;
+         	grid-gap: 0%;
+          }
+          .interna div{
+          }
+          .interna2 {
+          	display: grid;
+         	grid-template-columns: 50% 20% ;
+         	grid-gap: 30%;
+          }
+          .interna2 div{
+          }
+          .espaço10{
+          	text-align: right;
+          }
+          
+           @media (min-width: 280px) and (max-width: 1000px){
+				#grid-espaço{
+         
+         	font-size: 14px;
+         	
+         }
+        
+           .espaço div{
+          	 font-weight: bold;
+
+          }
+          .espaço1, .espaço2{
+          	font-size: 13px;
+          	font-weight: bold;
+          }
+        
+       	}
+       	
+		@media (min-width: 280px) and (max-width: 1000px){
+          	.interna{
+          	background-color: #ffffff;
+          	display: grid;
+         	grid-template-columns: 50% 10% 41% ;
+         	grid-gap: 0%;
+          }
+          .interna2 {
+          	display: grid;
+         	grid-template-columns: 80% 20% ;
+         	grid-gap: 0px;
+          }
+          .espaço0{
+          	text-align: right;
+          	margin-top: 30px;
+          }
+          .avançar,.cancelar{
+          	font-size: 12px;
+          }
+           #grid-corpo0{
+           	margin-left: ;
+           	margin-right: ;
+          	padding-left: 0px;
+         	padding-right: 0px;
+          }
+           .grid0{
+           	padding-left: 20%;
+         	grid-template-columns: 35% 35%;
+          }
+          }	
+		</style>
+       	
+	</head>
+	<body>
+		<section class="conteudo">
+		<header>
+			<div class="h" id="grid-h">
+
+		<div class="h1h2"><h1>Adicionar Dados</h1>
+		<h2>Mês de Competência: Março de 2023</h2></div>
+		<nav><div class="perfil">
+				<div><img class="img1" src="img/img1-html.jpg">
+			</div><div class="espaço-top-nome"><a class="nome" href="perfil do usuario.html">Junior Nivaldo</a></div>
+		</div></nav>
+		<section class="h1h2">
+			
+	        </div>
+		</section>
+		</header>
+
+		<div class="fundo">
+		<div class="caixa">
+		<section class="corpo" id="grid-corpo">
+		<div class="grid">
+			<div>Total da Receita<br><br><p>R$420.234,00</p></div>
+			<div>Média de Consumo por Atendimento
+				<p>R$213,45</p></div>
+			<div>Custo Medio por atendimento
+				<p>R$213,45</p></div>
+			<div>Total de Custo Variável
+				<br><br><p>R$420.234,00</p></div>
+			<div>Total de Custo Fixo
+			<br><br><p>R$420.234,00</p></div>
+		</div>
+
+		</section>
+		<div class="caixa2">
+			<div class="espaço" id="grid-espaço">
+		 <div >Categoria</div> <div class="espaço10">Valor</div>
+		</div>
+			<section class="corpo2" id="grid-corpo2">
+		<div class="grid2">		
+			<div class="grids"><section id="grid-interna"><div class="interna"><div>Receitas/tx serviço</div><div class="espaço0">R$</div><div class="espaço0">413.123,22</div></div></section></div>
+
+			<div class="grids"><section id="grid-interna"><div class="interna"><div>Tx Serviço (recebidos)</div><div class="espaço0">R$</div><div class="espaço0">413.123,22</div></div></section></div>
+
+			<div class="grids"><section id="grid-interna"><div class="interna"><div>Outros</div><div class="espaço10">R$</div></div></section></div>
+		</div>
+		</section>
+		<div class="posição">
+			 <img class="img2" src="https://images.moqups.com/repo/jtw6Ui7ATZHinaWWuOaUSmPZ6Ga9s92U/p_jl9YwPZEms9iQHWZFWNtUF5Ha12ptOAO/oBuiwK3SqM04UOVU8ZB9fyIOxRuwcKY5.png?Expires=1679923781&Key-Pair-Id=K1TPUF1X6HKIYU&Signature=FZJvXxPPyDP07O2f9y6LFNTlN7-bjesdWolE4ucg1gFuHnb8ji8bU3L6MJWq-LsxchZdu3RBS55AbaXbsr7XOC06leBYJsW8kiOcb7YYDW~h3XUQRXSyrS9nggg7Zc3dBYUov-nwgey7moSmFyvefHL-ysLUgBxF2En7MTHIjfMJeOptWRYRcNGFr-OD0BXGPPjjMh4ggOja-4JvS5DZRBFG9UAdfbOnpZNV15x1V2hNPQi4E3d5Qwj~1zBvgrn~-HiYbIh0u8k~Hef2gA4swgpJ1jeAnJpxwCd07wLxioPgtluo808np2T1glkFVb2n9Poi1ZotKyzwreUWgJQCBw"><h6 class="espaço1">Adicionar nova categoria</h6>
+			</div>
+			 <section class="corpo3" id="grid-corpo3">
+			 <div class="grid3"><section id="grid-interna"><div class="interna"><div>Descontos Aplicados</div><div class="espaço0">R$</div><div class="espaço0">324,21</div></div></section></div>
+			 </section>
+			 <div class="posição2">
+			 	<img class="img3" src="https://images.moqups.com/repo/jtw6Ui7ATZHinaWWuOaUSmPZ6Ga9s92U/p_jl9YwPZEms9iQHWZFWNtUF5Ha12ptOAO/oBuiwK3SqM04UOVU8ZB9fyIOxRuwcKY5.png?Expires=1679923781&Key-Pair-Id=K1TPUF1X6HKIYU&Signature=FZJvXxPPyDP07O2f9y6LFNTlN7-bjesdWolE4ucg1gFuHnb8ji8bU3L6MJWq-LsxchZdu3RBS55AbaXbsr7XOC06leBYJsW8kiOcb7YYDW~h3XUQRXSyrS9nggg7Zc3dBYUov-nwgey7moSmFyvefHL-ysLUgBxF2En7MTHIjfMJeOptWRYRcNGFr-OD0BXGPPjjMh4ggOja-4JvS5DZRBFG9UAdfbOnpZNV15x1V2hNPQi4E3d5Qwj~1zBvgrn~-HiYbIh0u8k~Hef2gA4swgpJ1jeAnJpxwCd07wLxioPgtluo808np2T1glkFVb2n9Poi1ZotKyzwreUWgJQCBw">
+			 <h6 class="espaço2">Adicionar nova categoria de desconto</h6>
+			</div>
+			 <div class="espaço00" id="grid-espaço"><div >Total da Receita</div> <div class="espaço10">R$420.234,00</div></div>
+		</div>
+
+		<div class="caixa3">
+			<section class="corpo4" id="grid-corpo4">
+			<div class="grid4"><section id="grid-interna"><div class="interna2"><div>n° de Atendimento</div><div class="espaço10">1.234</div></div></section></div>
+			</section>
+			<div class="espaço" id="grid-espaço"><div >Média de Consumo por Atendimento</div> <div class="espaço0">R$213,45 </div></div>
+		</div>
+		</div>
+
+		<div class="final">
+		<section class="corpo0" id="grid-corpo0">
+			<div class="grid0">
+				<div>
+		<nav>
+        <a class="cancelar" href="index.html">Cancelar</a>
+        </nav>
+        </div>
+        <div>
+		<nav>
+		<a class="avançar" href="index.html">Avançar</a>
+		</nav>     	
+	    </div>
+		</div>
+    		</div>
+        </section>
+    </div>
+    </div>
+    </section>
+	</body>
+</html>
